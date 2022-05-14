@@ -19,7 +19,6 @@ const app = Vue.createApp({
       gender: 'male',
       picture: 'https://randomuser.me/api/portraits/men/10.jpg',
       fact: 'fact'
-      
     }
   },
   mount(){
@@ -29,8 +28,6 @@ const app = Vue.createApp({
     
     async getUser() {
       var chosenNumber = Math.floor(Math.random() * this.quotes.length);
-      
-
       this.mycolor = '#'+(Math.random()*0xFFFFFF<<0).toString(16);
       document.body.style.background = this.mycolor;
 
